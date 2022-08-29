@@ -9,6 +9,7 @@
     @close="handleClose"
     router
     unique-opened
+    :collapse="!$store.getters.siderType"
   >
     <el-sub-menu
       :index="item.id"
@@ -27,7 +28,7 @@
       >
         <template #title>
           <el-icon> <component :is="icon"></component></el-icon>
-          <span>{{ it.authName }}</span>
+          <span>{{ $t(`menus.${it.path}`) }}</span>
         </template></el-menu-item
       >
     </el-sub-menu>

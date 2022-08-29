@@ -1,11 +1,21 @@
 <template>
   <div class="navbar">
     <Hamburger></Hamburger>
+    <Breadcrumb></Breadcrumb>
+    <div class="navbar-right">
+      <Avatar class="navbar-item" />
+      <Lang class="navbar-item" />
+      <Driver class="navbar-item" />
+    </div>
   </div>
 </template>
 
 <script setup>
 import Hamburger from './components/hamburger.vue'
+import Breadcrumb from './components/breadcrumb.vue'
+import Avatar from './components/avatar.vue'
+import Lang from './components/lang.vue'
+import Driver from './components/driver'
 </script>
 
 <style lang="scss" scoped>
